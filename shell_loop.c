@@ -1,9 +1,9 @@
 #include "shell.h"
 
 /**
- * hsh - this is the main shell loop
- * @info: this is the parameter and returns information struct
- * @av: this is the argument vector from main()
+ * hsh - main shell loop
+ * @info: the parameter & return info struct
+ * @av: the argument vector from main()
  *
  * Return: 0 on success, 1 on error, or error code
  */
@@ -44,7 +44,7 @@ int hsh(info_t *info, char **av)
 }
 
 /**
- * find_builtin - locates a builtin command
+ * find_builtin - finds a builtin command
  * @info: the parameter & return info struct
  *
  * Return: -1 if builtin not found,
@@ -158,4 +158,3 @@ void fork_cmd(info_t *info)
 		}
 	}
 }
-

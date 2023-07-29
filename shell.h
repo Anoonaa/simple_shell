@@ -1,6 +1,5 @@
-
-#ifndef _SHELL_H_
-#define _SHELL_H_
+#ifndef _SHELL_H
+#define _SHELL_H
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -234,4 +233,3 @@ int replace_vars(info_t *);
 int replace_string(char **, char *);
 
 #endif
-

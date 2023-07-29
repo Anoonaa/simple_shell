@@ -47,7 +47,7 @@ void print_error(info_t *info, char *estr)
 }
 
 /**
- * print_d - A function that prints a decimal (integer) number (base 10)
+ * print_d - function prints a decimal (integer) number (base 10)
  * @input: the input
  * @fd: the filedescriptor to write to
  *
@@ -86,14 +86,14 @@ int print_d(int input, int fd)
 }
 
 /**
- * change_number - A converter function, a mimic  of itoa
+ * convert_number - converter function, a clone of itoa
  * @num: number
  * @base: base
  * @flags: argument flags
  *
  * Return: string
  */
-char *change_number(long int num, int base, int flags)
+char *convert_number(long int num, int base, int flags)
 {
 	static char *array;
 	static char buffer[50];
@@ -122,12 +122,12 @@ char *change_number(long int num, int base, int flags)
 }
 
 /**
- * minus_comments - A function that  changes first instance of '#' with '\0'
+ * remove_comments - function replaces first instance of '#' with '\0'
  * @buf: address of the string to modify
  *
- * Return: Always 0;
+ * Return: Always 0 for success
  */
-void minus_comments(char *buf)
+void remove_comments(char *buf)
 {
 	int i;
 
@@ -138,4 +138,3 @@ void minus_comments(char *buf)
 			break;
 		}
 }
-
